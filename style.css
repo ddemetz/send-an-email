@@ -1,0 +1,4 @@
+/* opacity changes how visible an element is. 0 makes it completely invisible, 0.01-0.99 makes it look like a ghost, and 1 makes it 100% visible! */
+#hidden{
+  opacity:0;
+}

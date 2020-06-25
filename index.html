@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Demand Change in _____</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+
+    <!-- Text at the top -->
+    <h2>Send an email to _____ requesting/demanding change regarding _____.</h2>
+    <h3>Some explanation.</h3>
+
+    <!-- form -->
+    <!-- The onsubmit attribute is a failsafe in case our js isn't working correctly (and is optional) -->
+    <form onsubmit="return false;">
+      <input type="text" placeholder="First Name" id="fname">
+      <input type="text" placeholder="Last Name" id="lname">
+      <input type='submit' id="submit">
+</form>
+
+<!-- This is given an id of hidden because in the css, the #hidden opacity is set to 0 to make it invisible for now-->
+<div id="hidden">
+  <p>Subject:</p>
+<p id="email-subject">
+ <!-- This will be empty so you can interpolate a message in js --></p>
+<p>Message:</p>
+<p id="email-message">
+  <!-- This will be empty so you can interpolate a message in js -->
+</p>
+
+  <p> If this looks good, copy and paste into your email or
+    <!-- The link for this <a> tag is empty because the JS will interpolate the email pop up -->
+  <a id="email-pop-up" href="">send here</a>.</p>
+
+  <!-- links to js and jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
